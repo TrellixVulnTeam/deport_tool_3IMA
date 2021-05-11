@@ -1,0 +1,25 @@
+# Ignore any python bytecode.
+*.pyc
+
+# ignore cipd client files
+/.cipd_bin
+/.cipd_client*
+/.versions
+
+# Ignore "disable auto update" sentinel file.
+.disable_auto_update
+
+# Ignore the batch files produced by the Windows bootstrapping.
+/git-bash
+/git.bat
+/gitk.bat
+/ssh.bat
+/ssh-keygen.bat
+
+# Ignore locations where third-party tools are placed during bootstrapping.
+/bootstrap*_bin
+/external_bin
+/win_toolchain/vs2019_files
+
+# Ignore the monitoring config. It is unique for each user.
+/metrics.cfg
